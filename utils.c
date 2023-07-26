@@ -50,6 +50,7 @@ int is_chain(info_t *info, char *buf, size_t *p)
 		return (0);
 	}
 }
+
 /**
  * check_chain - A program function that checks chain
  * @info: information
@@ -81,6 +82,7 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 	}
 	*p = b;
 }
+
 /**
  * replace_alias - function that replaces aliases
  * @info: information
@@ -108,6 +110,7 @@ int replace_alias(info_t *info)
 	}
 	return (1);
 }
+
 /**
  * replace_variables - a function that replaces variables
  * @info: information
@@ -146,6 +149,7 @@ int replace_variables(info_t *info)
 	}
 	return (0);
 }
+
 /**
  * replace_str - a function that replaces a string
  * @old: old string

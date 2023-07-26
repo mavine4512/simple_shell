@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * bfree - a function that checks for NULL address
  * @pointer: pointer to address

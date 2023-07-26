@@ -21,6 +21,7 @@ int is_cmd(info_t *info, char *path)
 	}
 	return (0);
 }
+
 /**
  * duplicate_chars - a function that duplicates characters
  * @pathstr: path for string
@@ -43,6 +44,7 @@ char *duplicate_chars(char *pathstr, int start, int stop)
 	buf[y]  = 0;
 	return (buf);
 }
+
 /**
  * find_route - a function that checks the route
  * @info: information

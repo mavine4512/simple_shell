@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * list_len - a function that lists length
  * @h: pointer to head
@@ -15,6 +16,7 @@ size_t list_len(const list_t *h)
 	}
 	return (a);
 }
+
 /**
  * list_to_strings - a function that lists strings
  * @head: first pointer
@@ -51,6 +53,7 @@ char **list_to_strings(list_t *head)
 	chr[a] = NULL;
 	return (chr);
 }
+
 /**
  * print_list - a function that prints lists
  * @h: head pointer
@@ -70,6 +73,7 @@ size_t print_list(const list_t *h)
 	}
 	return (a);
 }
+
 /**
  * node_starts_with - a function that shows where node begins from
  * @node: pointer
@@ -89,6 +93,7 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 	}
 	return (NULL);
 }
+
 /**
  * get_node_index -  a function that gets node index
  * @head: pointer at head

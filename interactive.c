@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * hsh - a function that checks for shell loop
  * @info: information
@@ -41,6 +42,7 @@ int hsh(info_t *info, char **av)
 	}
 	return (y);
 }
+
 /**
  * find_builtin - a function that checks for builtin
  * @info: information
@@ -73,6 +75,7 @@ int find_builtin(info_t *info)
 	return (y);
 
 }
+
 /**
  * find_cmd - a function that checks the commands
  * @info: information
@@ -115,6 +118,7 @@ void find_cmd(info_t *info)
 		}
 	}
 }
+
 /**
  * fork_cmd - a function that forks a command
  * @info: information

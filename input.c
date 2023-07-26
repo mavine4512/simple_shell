@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * clear_data - function that initializes structure
  * @info: information
@@ -12,6 +13,7 @@ void clear_data(info_t *info)
 	info->path = NULL;
 	info->argc = 0;
 }
+
 /**
  * set_data - a function that initializes structure
  * @info: information
@@ -45,6 +47,7 @@ void set_data(info_t *info, char **av)
 		replace_variables(info);
 	}
 }
+
 /**
  * free_data - a function that frees data
  * @info: information

@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * add_node - a function that add a node
  * @head: first node
@@ -32,6 +33,7 @@ list_t *add_node(list_t **head, const char *str, int num)
 	return (curr_head);
 
 }
+
 /**
  * add_node_end - a function that adds a node at the end of list
  * @head: first node
@@ -72,6 +74,7 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 	}
 	return (new_node);
 }
+
 /**
  * print_ls_string - a function that prints a string
  * @h: pointer
@@ -89,6 +92,7 @@ size_t print_ls_string(const list_t *h)
 	}
 	return (a);
 }
+
 /**
  * delete_node_at_index - a function that deletes a node at index
  * @head: first node
@@ -123,6 +127,7 @@ int delete_node_at_index(list_t **head, unsigned int index)
 	return (0);
 
 }
+
 /**
  * free_list - a function that frees list
  * @head_ptr: head pointer

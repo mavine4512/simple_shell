@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * _putchar - a program function that writes a character
  * @c: character
@@ -13,6 +14,7 @@ int _putchar(char c)
 	(c != BUF_FLUSH) ? (buf[a++] = c) : 0;
 	return (1);
 }
+
 /**
  * _strdup -  a function that checks for duplicates
  * @str: string
@@ -37,6 +39,7 @@ char *_strdup(const char *str)
 	}
 	return (est);
 }
+
 /**
  * _puts - a function that checks for input string
  * @str: string
@@ -55,6 +58,7 @@ void _puts(char *str)
 	}
 
 }
+
 /**
  * _strcpy - a function that copies a string
  * @dest: destination

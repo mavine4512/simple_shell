@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * _strlen - function that returns string length
  * @s: string character
@@ -16,6 +17,7 @@ int _strlen(char *s)
 
 	return (a);
 }
+
 /**
  * _strcmp - a function that compares a string
  * @s1: string one
@@ -32,6 +34,7 @@ int _strcmp(char *s1, char *s2)
 		return (*s1 < *s2 ? -1 : 1);
 
 }
+
 /**
  * starts_with - a function that checks if a string a substring
  * @haystack: search string
@@ -45,6 +48,7 @@ char *starts_with(const char *haystack, const char *needle)
 			return (NULL);
 	return ((char *)haystack);
 }
+
 /**
  * _strcat - a function that concatenates strings
  * @dest: destination

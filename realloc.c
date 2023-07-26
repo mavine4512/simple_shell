@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * _setmem - a function that sets memory
  * @s: pointer to memory
@@ -17,6 +18,7 @@ char *_setmem(char *s, char b, unsigned int n)
 	}
 	return (s);
 }
+
 /**
  * ffree - a function that frees strings
  * @pp: string
@@ -34,6 +36,7 @@ void ffree(char **pp)
 	}
 	free(i);
 }
+
 /**
  * _realloc - a function that reallocates memory
  * @pointer: pointer to memory
