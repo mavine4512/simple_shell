@@ -21,9 +21,7 @@ int is_delimeter(char c, char *delim)
 	while (*delim)
 	{
 		if (*delim == c)
-		{
 			return (1);
-		}
 		delim++;
 	}
 	return (0);
@@ -71,7 +69,11 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-	(sign == -1) ? (output = -rslt) : (output = rslt);
+	if (sign == -1)
+		output = -rslt;
+	else
+		output = rslt;
+
 	return (output);
 }
 
