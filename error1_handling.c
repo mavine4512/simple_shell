@@ -66,7 +66,7 @@ int print_d(int input, int fd)
 	{
 		_abs_ = -input;
 		__putchar('-');
-	       	count++;
+		count++;
 	}
 	else
 		_abs_ = input;

@@ -57,7 +57,7 @@ int read_history(info_t *info)
 {
 	char  *buffer = NULL, *fname = get_history_file(info);
 	ssize_t d, dlen, filesize = 0;
-	int a = 0, end = 0, linenumber = 0;
+	int a, end = 0, linenumber = 0;
 	struct stat st;
 
 	if (!fname)
@@ -75,7 +75,6 @@ int read_history(info_t *info)
 		return (0);
 	dlen = read(d, buffer, filesize);
 	buffer[filesize] = 0;
-
 	if (dlen <= 0)
 		return (free(buffer), 0);
 	close(d);
