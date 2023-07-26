@@ -74,6 +74,7 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 	}
 	return (new_node);
 }
+
 /**
  * print_ls_string - a function that prints a string
  * @h: pointer

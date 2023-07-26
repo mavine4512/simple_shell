@@ -47,6 +47,7 @@ char **strtow(char *str, char *d)
 	g[b] = NULL;
 	return (g);
 }
+
 /**
  * strtow2 - a function that splits strings
  * @str: string

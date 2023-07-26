@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * get_history_file - a function that gets history file
  * @info: information
@@ -20,6 +21,7 @@ char *get_history_file(info_t *info)
 	_strcat(b, HIST_FILE);
 	return (b);
 }
+
 /**
  * write_history - A function that writes the history
  * @info: information
@@ -48,6 +50,7 @@ int write_history(info_t *info)
 	close(d);
 	return (1);
 }
+
 /**
  * read_history - a function that reads the history
  * @info: information
@@ -96,6 +99,7 @@ int read_history(info_t *info)
 	renumber_history(info);
 	return (info->histcount);
 }
+
 /**
  * build_history_list - a function that bulds history
  * @info: information
@@ -115,6 +119,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 		info->history = node;
 	return (0);
 }
+
 /**
  * renumber_history - a function that renumbers history
  * @info: information
