@@ -13,7 +13,8 @@ char **strtow(char *str, char *d)
 
 	if (str == NULL || str[0] == 0)
 		return (NULL);
-	(!d) ? (d = " ") : 0;
+	if (!d)
+		d = " ";
 	for (a = 0; str[a] != '\0'; a++)
 		if (!is_delimeter(str[a], d) && (is_delimeter(str[a + 1], d) || !str[a + 1]))
 			s_word++;
