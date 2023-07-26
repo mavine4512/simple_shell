@@ -28,7 +28,7 @@ char *_getenviron(info_t *info, const char *name)
 	{
 		p = starts_with(node->str, name);
 		if (p && *p)
-			return (0);
+			return (p);
 	}
 	return (NULL);
 }
