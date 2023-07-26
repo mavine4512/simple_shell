@@ -61,7 +61,10 @@ int print_d(int input, int fd)
 	int index, count = 0;
 	unsigned int _abs_,  current;
 
-	(fd == STDERR_FILENO) ? (__putchar = _eputchar) : 0;
+	if (fd == STDERR_FILENO)
+	{
+		__putchar = _eputchar;
+	}
 	if (input < 0)
 	{
 		_abs_ = -input;
@@ -102,7 +105,11 @@ char *conv_no(long int num, int base, int flags)
 	char sign = 0, *ptr;
 	unsigned long n = num;
 
-	(!(flags & CONVERT_UNSIGNED) && num < 0) ? (n = -num, sign = '-') : 0;
+	if (!(flags & CONVERT_UNSIGNED) && num < 0)
+	{
+		n = -num;
+		sign = '-';
+	}
 	array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
 	ptr = &buffer[49];
 	*ptr = '\0';
